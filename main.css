@@ -1,0 +1,236 @@
+/* ---------- RESET ---------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  background-color: #131313;
+  color: white;
+}
+
+/* ---------- BODY ---------- */
+
+body {
+  padding: 80px;
+  height: 100vh;
+}
+
+.my-container {
+  display: flex;
+  gap: 10px;
+  height: calc(100%);
+  background-color: #131313;
+}
+
+/* ---------- STATIC / LEFT ---------- */
+
+.static-content {
+  padding: 0 30px;
+  width: 40%;
+  height: calc(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.static-content .name {
+  text-decoration: none;
+  color: #f87171;
+  font-weight: bold;
+}
+
+.static-content .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: auto 0;
+}
+
+.static-content .menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+.menu a.menu-link {
+  transition: all 0.2s ease;
+}
+
+.menu a.menu-link:hover {
+  font-weight: 400;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.9);
+}
+
+.static-content .menu .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.static-content .menu .icons a:hover {
+  text-shadow: none;
+  color: white !important;
+  transition: all 0.3s linear;
+}
+
+.my-footer {
+  color: white;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+/* ---------- SCROLLABLE /RIGHT ---------- */
+
+.scrollable-content {
+  width: 60%;
+  height: calc(100%);
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrollbar */
+  padding: 0 30px;
+  color: white;
+}
+
+/* Scroll bar for Chrome, Edge, and Safari */
+.scrollable-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: black;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+/* Scroll bar for Firefox */
+.scrollable-content {
+  scrollbar-width: thin;
+  scrollbar-color: #555 black;
+}
+
+/* ---------- GRID ---------- */
+
+.webdev,
+.yoga,
+.bachelor,
+.design,
+.teaching,
+.santillana,
+.customer-service {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: max(130px) 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "years title"
+    "years descr";
+}
+
+.years {
+  grid-area: years;
+}
+
+.title {
+  grid-area: title;
+}
+
+.descr {
+  grid-area: descr;
+}
+
+.title a:hover {
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.9);
+  transition: all 0.2s linear;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media screen and (max-width: 576px) {
+  .webdev,
+  .yoga,
+  .bachelor,
+  .design,
+  .teaching,
+  .santillana,
+  .customer-service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me {
+    align-items: flex-start;
+  }
+
+  .about-me img {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    height: fit-content;
+    padding: 40px;
+  }
+
+  .my-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .static-content {
+    overflow: visible;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .role-descr {
+    margin-bottom: 100px;
+  }
+
+  .static-content .menu .icons i {
+    font-size: 1.5rem;
+  }
+
+  .scrollable-content {
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .my-footer {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1174px) {
+  .about-me {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-me img {
+    align-self: flex-start;
+  }
+}
+
+
+@media screen and (min-width: 1175px) and (max-width: 1309px) {
+  .text-about p {
+    font-size: 14px;
+  }
+}

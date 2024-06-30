@@ -1,0 +1,67 @@
+.project-card {
+  border: 2px solid white;
+  padding: 20px;
+  margin: 50px 0;
+  border-radius: 8px;
+  transition: all 0.2s linear;
+}
+
+.project-card:hover {
+  background-color: black;
+  border: 2px solid #f87171;
+}
+
+.project-tech-list {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.project-tech-list li {
+  background-color: #ccc;
+  padding: 6px 12px;
+  border-radius: 40px;
+  color: #131313;
+}
+
+.portfolio {
+  border: 1px solid #363636;
+}
+
+.project-card .img-descr img {
+  max-width: 50%;
+  min-width: 50%;
+  height: auto;
+}
+
+.project-card .img-descr {
+  flex-direction: row;
+}
+.links-project a i:hover {
+  transform: scale(1.1);
+  color: white;
+  transition: all 0.3s linear;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media (max-width: 768px) {
+  .project-card .img-descr {
+    flex-direction: column;
+  }
+
+  .project-card .img-descr img {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .project-card .img-descr {
+    flex-direction: column;
+  }
+  .project-card .img-descr img {
+    min-width: 100%;
+  }
+}

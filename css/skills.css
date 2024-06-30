@@ -1,0 +1,33 @@
+/* ---------- RESET ---------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  background-color: #131313;
+  color: white;
+}
+
+/* ---------- SKILLS ---------- */
+
+.skills-list li:not(.soft) {
+  padding: 5px 10px;
+  border-left: 3px solid #fa8072; /* Salmon color */
+  background-color: rgba(177, 177, 177, 0.2);
+  border-radius: 4px;
+}
+
+.skills-list .soft {
+  padding-left: 10px;
+  border: 1px solid rgba(177, 177, 177, 0.2);
+  border-left: 3px solid #fa8072; /* Salmon color */
+  border-radius: 4px;
+}
+
+.skills-list li:not(:last-child) {
+  margin-bottom: 12px;
+}
