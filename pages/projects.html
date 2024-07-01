@@ -3,32 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>die Cátia Monteiro</title>
+    <title>Cátia Monteiro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta
       name="description"
       content="Discover Cátia Monteiro's portfolio showcasing expertise in web development. Contact for collaborations and more."
     />
-
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/428648f03a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
-    <link rel="stylesheet" href="../css/projects.css" />
-
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/428648f03a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
@@ -86,13 +84,50 @@
         </p>
 
         <div class="project-card">
+          <div class="title-links flex content-center items-center pb-4 flex-wrap">
+            <h3 class="project-title text-2xl font-bold mr-10">Portfolio website</h3>
 
-          <div class="title-links flex gap-10 content-center items-center pb-4">
-            <h3 class="project-title text-2xl font-bold">Portfolio website</h3>
-            
             <div class="links-project flex gap-8 items-center">
               <p class="text-gray-400 flex items-center">
-               project<a
+                repository<a
+                  href="https://github.com/diecatiamonteiro/portfolio-website"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-solid fa-square-arrow-up-right pl-1.5 text-gray-400 text-xl justify-center"
+                  ></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="img-descr flex gap-5">
+            <img
+              class="portfolio"
+              src="../images/portfolio-project.png"
+              alt="current portfolio page project"
+            />
+            <p class="project-description leading-relaxed pb-4">
+              The portfolio website you are currently viewing. Built from
+              scratch using Tailwind together with CSS to showcase my skills and
+              experience in web development.
+            </p>
+          </div>
+
+          <ul class="project-tech-list font-bold pt-5">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="title-links flex content-center items-center pb-4 flex-wrap">
+            <h3 class="project-title text-2xl font-bold mr-10">SCSS exercise</h3>
+
+            <div class="links-project flex gap-8 items-center">
+              <p class="text-gray-400 flex items-center">
+                project<a
                   href="https://diecatiamonteiro.github.io/scss-exercise/"
                   target="_blank"
                 >
@@ -112,58 +147,6 @@
                 </a>
               </p>
             </div>
-  
-            </div>
-
-          <div class="img-descr flex gap-5">
-            <img
-              class="portfolio"
-              src="../images/portfolio-project.png"
-              alt="current portfolio page project"
-            />
-            <p class="project-description leading-relaxed pb-4">
-              The portfolio website you are currently viewing. Built from
-              scratch using Tailwind together with CSS to showcase my skills and
-              experience in web development.
-            </p>
-          </div>
-        
-
-          <ul class="project-tech-list font-bold pt-5">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Tailwind CSS</li>
-          </ul>
-        </div>
-
-        <div class="project-card">
-
-          <div class="title-links flex gap-10 content-center items-center pb-4">
-          <h3 class="project-title text-2xl font-bold">SCSS exercise</h3>
-          
-          <div class="links-project flex gap-8 items-center">
-            <p class="text-gray-400 flex items-center">
-             project<a
-                href="https://diecatiamonteiro.github.io/scss-exercise/"
-                target="_blank"
-              >
-                <i
-                  class="fa-solid fa-square-arrow-up-right pl-1.5 text-gray-400 text-xl justify-center"
-                ></i>
-              </a>
-            </p>
-            <p class="text-gray-400 flex items-center">
-              repository<a
-                href="https://github.com/diecatiamonteiro/scss-exercise"
-                target="_blank"
-              >
-                <i
-                  class="fa-solid fa-square-arrow-up-right pl-1.5 text-gray-400 text-xl justify-center"
-                ></i>
-              </a>
-            </p>
-          </div>
-
           </div>
 
           <div class="img-descr flex gap-5">
@@ -185,13 +168,12 @@
         </div>
 
         <div class="project-card">
+          <div class="title-links flex content-center items-center pb-4 flex-wrap">
+            <h3 class="project-title text-2xl font-bold mr-10">Bootstrap exercise</h3>
 
-          <div class="title-links flex gap-10 content-center items-center pb-4">
-            <h3 class="project-title text-2xl font-bold">Bootstrap exercise</h3>
-            
             <div class="links-project flex gap-8 items-center">
               <p class="text-gray-400 flex items-center">
-               project<a
+                project<a
                   href="https://diecatiamonteiro.github.io/bootstrap-exercise/"
                   target="_blank"
                 >
@@ -211,9 +193,8 @@
                 </a>
               </p>
             </div>
-  
-            </div>
-          
+          </div>
+
           <div class="img-descr flex gap-5">
             <img
               src="../images/bootstrap-project.png"
