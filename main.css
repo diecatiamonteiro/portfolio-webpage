@@ -45,8 +45,8 @@ header {
 
 .static-content .name {
   text-decoration: none;
-  color: #f87171;
   font-weight: bold;
+  color: #f87171;
 }
 
 .static-content .menu {
@@ -175,7 +175,7 @@ header {
     height: calc(100% - 15px);
   }
 
-  .static-content {
+  .my-container .static-content {
     position: fixed;
     top: 30px;
     z-index: 10;
@@ -183,7 +183,7 @@ header {
     height: 25%;
     width: calc(100% - 59.5px);
   }
-  .static-content .menu {
+  .my-container .static-content .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -191,11 +191,11 @@ header {
     padding-top: 20px;
   }
 
-  .static-content .menu a {
+  .my-container .static-content .menu a {
     font-size: 1.2rem;
   }
 
-  .static-content .menu .icons {
+  .my-container .static-content .menu .icons {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -203,28 +203,30 @@ header {
     margin-top: 0;
   }
 
-  .scrollable-content {
+  .my-container .static-content header {
+    padding-bottom: 35px;
+  }
+
+  .my-container .static-content header a {
+    font-size: 2.5rem;
+  }
+
+  .my-container .static-content header .role {
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+
+  .my-container .static-content header .role-descr {
+    font-size: 0.95rem;
+    line-height: 20px;
+  }
+
+  .my-container .scrollable-content {
     flex: 1 1 auto; /* Allows the scrollable content to take up remaining space */
     padding: 0;
     overflow-y: auto;
     width: 100%;
     margin-top: 280px;
-  }
-
-  header {
-    padding-bottom: 10px;
-  }
-
-  .name {
-    font-size: 2.5rem;
-  }
-
-  .role {
-    font-size: 1.5rem;
-  }
-
-  .role-descr {
-    font-size: 1rem;
   }
 
   .webdev,
@@ -238,44 +240,49 @@ header {
     flex-direction: column;
   }
 
-  .about-me {
-    flex-direction: column
-;  }
+  .my-container .scrollable-content .page-title {
+    font-size: 2.5rem;
+  }
 
-  .about-me img {
+  .my-container .scrollable-content .about-me {
+    flex-direction: column;
+  }
+
+  .my-container .scrollable-content .about-me img {
     align-self: flex-start;
     height: 350px;
   }
 
-  .page-title {
-    font-size: 2.5rem;
-  }
-
-  .sub-title {
+  .my-container .scrollable-content .sub-title {
     font-size: 1.5rem;
     padding-top: 50px;
     padding-bottom: 40px;
   }
 
-  .senior {
+  .my-container .scrollable-content .senior {
     padding-bottom: 10px;
   }
-  .senior, .junior {
+  .my-container .scrollable-content .senior,
+  .my-container .scrollable-content .junior {
     font-size: 1.5rem;
     line-height: 24px;
   }
 
-  .interests p {
+  .my-container .scrollable-content .interests p {
     font-size: 1rem;
   }
 
-  .icon-list {
-    gap: 10px
+  .my-container .scrollable-content .interests .icon-list {
+gap: 0.5rem  }
+
+  .my-container .scrollable-content .interests .icon-list .material-icons {
+    font-size: 1.7rem;
   }
 
-  .last-icon {
+  .my-container .scrollable-content .interests .icon-list .last-icon {
     padding-bottom: 15px;
   }
+
   .my-footer {
     width: 100%;
     padding: 5px 0;
