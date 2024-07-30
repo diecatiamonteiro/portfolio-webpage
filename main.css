@@ -166,6 +166,7 @@ header {
 @media screen and (max-width: 576px) {
   body {
     padding: 30px;
+    overflow: hidden; /* Prevent body scrolling */
   }
 
   .my-container {
@@ -173,6 +174,7 @@ header {
     flex-direction: column;
     gap: 10px;
     height: calc(100% - 15px);
+    overflow: hidden; /* Prevent overflow */
   }
 
   .my-container .static-content {
@@ -182,6 +184,7 @@ header {
     padding: 0;
     height: 30%;
     width: calc(100% - 59.5px);
+    overflow: hidden; /* Prevent overflow */
   }
   .my-container .static-content .menu {
     display: flex;
