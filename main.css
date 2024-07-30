@@ -180,7 +180,7 @@ header {
     top: 30px;
     z-index: 10;
     padding: 0;
-    height: 25%;
+    height: 30%;
     width: calc(100% - 59.5px);
   }
   .my-container .static-content .menu {
@@ -273,7 +273,8 @@ header {
   }
 
   .my-container .scrollable-content .interests .icon-list {
-gap: 0.5rem  }
+    gap: 0.5rem;
+  }
 
   .my-container .scrollable-content .interests .icon-list .material-icons {
     font-size: 1.7rem;
