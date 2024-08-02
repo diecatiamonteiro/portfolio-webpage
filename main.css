@@ -159,77 +159,92 @@ header {
   transition: all 0.2s linear;
 }
 
-/* ---------- RESPONSIVE DESIGN ---------- */
-
-/* Mobile */
+/* ---------- RESPONSIVE DESIGN || MOBILE ---------- */
 
 @media screen and (max-width: 576px) {
   body {
     padding: 30px;
-    overflow: hidden; /* Prevent body scrolling */
+    overflow-y: hidden;
+
+    /* overflow-y: scroll; Prevent body scrolling */
   }
 
   .my-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: calc(100% - 15px);
-    overflow: hidden; /* Prevent overflow */
+    display: block;
+    /* height: calc(100% - 15px); */
+    /* overflow: auto; */
+    /* background-color: lightblue; */
   }
 
   .my-container .static-content {
+    /* display: block; */
     position: fixed;
-    top: 30px;
-    z-index: 10;
+    /* top: 30px; */
+    /* z-index: 10; */
     padding: 0;
-    height: 30%;
+    height: 27%;
     width: calc(100% - 59.5px);
-    overflow: hidden; /* Prevent overflow */
+    /* overflow: hidden; Prevent overflow */
+    background-color: #131313;
   }
-  .my-container .static-content .menu {
-    display: flex;
+
+  .my-container .static-content header nav {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
-    padding-top: 20px;
+    /* position: fixed; */
+    /* top: 18.5%; */
+    /* width: calc(100% - 59.5px); */
+    margin-top: 10px;
+    /* background-color: orange; */
   }
+
+  /* .my-container .static-content nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 18.5%;
+    width: calc(100% - 59.5px);
+    padding-top: 10px;
+    background-color: orange;
+  } */
 
   .my-container .static-content .menu a {
     font-size: 1.2rem;
   }
 
-  .my-container .static-content .menu .icons {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 20px;
+  .my-container .static-content header .menu .icons {
     margin-top: 0;
   }
 
   .my-container .static-content header {
-    padding-bottom: 35px;
+    gap: 0;
   }
 
   .my-container .static-content header a {
     font-size: 2.5rem;
+    padding-bottom: 0;
   }
 
   .my-container .static-content header .role {
     font-size: 1.4rem;
     line-height: 30px;
+    padding: 0;
   }
 
   .my-container .static-content header .role-descr {
     font-size: 0.95rem;
-    line-height: 20px;
+    line-height: 18px;
   }
 
   .my-container .scrollable-content {
-    flex: 1 1 auto; /* Allows the scrollable content to take up remaining space */
+    /* flex: 1 1 auto;  */
+    /*Allows the scrollable content to take up remaining space*/
     padding: 0;
+    padding-top: 210px;
     overflow-y: auto;
     width: 100%;
-    margin-top: 280px;
+    /* margin-top: 280px; */
+    /* background-color: red; */
   }
 
   .webdev,
@@ -288,11 +303,9 @@ header {
   }
 
   .my-footer {
-    width: 100%;
-    padding: 5px 0;
+    margin: 5px 0;
+  
     text-align: right;
-    position: relative;
-    right: 30px;
     font-size: 0.7rem;
   }
 }
