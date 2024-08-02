@@ -162,40 +162,47 @@ header {
 /* ---------- RESPONSIVE DESIGN || MOBILE ---------- */
 
 @media screen and (max-width: 576px) {
-  body {
-    padding: 30px;
-    overflow-y: hidden;
 
-    /* overflow-y: scroll; Prevent body scrolling */
+  body {
+    padding: 20px;
+    overflow-y: hidden;
   }
 
   .my-container {
-    display: block;
     /* height: calc(100% - 15px); */
-    /* overflow: auto; */
+    /* Makes bottom a bit more up */
+    display: block;
+    overflow: auto;
     /* background-color: lightblue; */
   }
 
-  .my-container .static-content {
-    /* display: block; */
+  /* STATIC = HEADER + MENU */
+
+  .static-content {
     position: fixed;
-    /* top: 30px; */
-    /* z-index: 10; */
     padding: 0;
     height: 27%;
-    width: calc(100% - 59.5px);
-    /* overflow: hidden; Prevent overflow */
+    width: calc(100%);
+    /* background-color: yellow; */
     background-color: #131313;
   }
 
-  .my-container .static-content header nav {
+  /* MENU */
+
+  .my-container .static-content nav {
     flex-direction: row;
     flex-wrap: wrap;
-    /* position: fixed; */
-    /* top: 18.5%; */
-    /* width: calc(100% - 59.5px); */
-    margin-top: 10px;
+    gap: 20px;
+    margin-top: 20px;
+    position: fixed;
+    top: 17%;
+    width: calc(100% - 40px);
     /* background-color: orange; */
+  }
+
+  .my-container .static-content nav .menu-link {
+    border: 1px solid white;
+    border-radius: 5px;
   }
 
   /* .my-container .static-content nav {
@@ -210,30 +217,40 @@ header {
 
   .my-container .static-content .menu a {
     font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
   }
 
   .my-container .static-content header .menu .icons {
     margin-top: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .my-container .static-content header {
     gap: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .my-container .static-content header a {
     font-size: 2.5rem;
-    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .my-container .static-content header .role {
     font-size: 1.4rem;
     line-height: 30px;
     padding: 0;
+    margin: 0;
   }
 
   .my-container .static-content header .role-descr {
     font-size: 0.95rem;
     line-height: 18px;
+    padding: 0;
+    margin: 0;
   }
 
   .my-container .scrollable-content {
@@ -304,7 +321,7 @@ header {
 
   .my-footer {
     margin: 5px 0;
-  
+
     text-align: right;
     font-size: 0.7rem;
   }
