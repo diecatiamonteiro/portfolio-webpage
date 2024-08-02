@@ -162,18 +162,22 @@ header {
 /* ---------- RESPONSIVE DESIGN || MOBILE ---------- */
 
 @media screen and (max-width: 576px) {
-
   body {
     padding: 20px;
     overflow-y: hidden;
+    height: 100vh;
   }
 
   .my-container {
     /* height: calc(100% - 15px); */
     /* Makes bottom a bit more up */
-    display: block;
-    overflow: auto;
+    /* display: block;
+    overflow: auto; */
     /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden; /* Prevent container scrollbar */
   }
 
   /* STATIC = HEADER + MENU */
@@ -203,6 +207,7 @@ header {
   .my-container .static-content nav .menu-link {
     border: 1px solid white;
     border-radius: 5px;
+    color: red;
   }
 
   /* .my-container .static-content nav {
@@ -258,6 +263,7 @@ header {
     /*Allows the scrollable content to take up remaining space*/
     padding: 0;
     padding-top: 210px;
+    flex: 1;
     overflow-y: auto;
     width: 100%;
     /* margin-top: 280px; */
@@ -321,9 +327,13 @@ header {
 
   .my-footer {
     margin: 5px 0;
-
     text-align: right;
     font-size: 0.7rem;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: calc(100%);
+    background-color: #131313;
   }
 }
 
