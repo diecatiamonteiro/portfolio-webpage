@@ -163,36 +163,27 @@ header {
 
 @media screen and (max-width: 576px) {
   body {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     overflow-y: hidden;
-    height: 100vh;
   }
 
   .my-container {
-    /* height: calc(100% - 15px); */
-    /* Makes bottom a bit more up */
-    /* display: block;
-    overflow: auto; */
-    /* background-color: lightblue; */
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden; /* Prevent container scrollbar */
+    display: block;
+    overflow: hidden;
+    background-color: lightblue;
   }
 
   /* STATIC = HEADER + MENU */
-
   .static-content {
     position: fixed;
     padding: 0;
-    height: 27%;
+    height: 35%;
     width: calc(100%);
     /* background-color: yellow; */
     background-color: #131313;
   }
 
   /* MENU */
-
   .my-container .static-content nav {
     flex-direction: row;
     flex-wrap: wrap;
@@ -222,48 +213,42 @@ header {
 
   .my-container .static-content .menu a {
     font-size: 1.2rem;
-    padding: 0;
-    margin: 0;
+
   }
 
   .my-container .static-content header .menu .icons {
     margin-top: 0;
-    padding: 0;
-    margin: 0;
+
   }
 
   .my-container .static-content header {
     gap: 0;
-    padding: 0;
-    margin: 0;
+
   }
 
   .my-container .static-content header a {
     font-size: 2.5rem;
-    padding: 0;
-    margin: 0;
+
   }
 
   .my-container .static-content header .role {
     font-size: 1.4rem;
     line-height: 30px;
-    padding: 0;
-    margin: 0;
+
   }
 
   .my-container .static-content header .role-descr {
     font-size: 0.95rem;
     line-height: 18px;
-    padding: 0;
-    margin: 0;
+
   }
 
   .my-container .scrollable-content {
     /* flex: 1 1 auto;  */
     /*Allows the scrollable content to take up remaining space*/
     padding: 0;
-    padding-top: 210px;
-    flex: 1;
+    padding-top: 280px;
+    /* flex: 1; */
     overflow-y: auto;
     width: 100%;
     /* margin-top: 280px; */
