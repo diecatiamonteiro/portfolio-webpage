@@ -3,21 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Cátia Monteiro</title>
+    <title>die Cátia Monteiro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta
       name="description"
       content="Discover Cátia Monteiro's portfolio showcasing expertise in web development. Contact for collaborations and more."
     />
-    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
-    <link rel="stylesheet" href="../css/contact.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/428648f03a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -26,11 +32,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <script
-      src="https://kit.fontawesome.com/428648f03a.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
@@ -81,7 +82,7 @@
       </div>
 
       <div class="scrollable-content">
-        <h2 class="page-title font-extrabold text-5xl pt-4 pb-9">Contact.</h2>
+        <h2 class="font-extrabold text-5xl pt-4 pb-9">Contact.</h2>
         <p class="text-xl pb-10 w-full max-w-[650px]">
           Whether you have a project in mind, a question about my work, or just
           want to say hello, feel free to reach out!
@@ -112,7 +113,7 @@
           >
             <label for="name" class="font-bold">Name</label>
             <input
-              class="input-field w-full max-w-[500px] bg-transparent border-b-1 border-gray-300 focus:outline-none focus:border-red-400 focus:border-b-1 transition duration-200 ease-in-out pt-4 pb-2"
+            class="input-field w-full max-w-[500px] bg-transparent border-b-1 border-gray-300 focus:outline-none focus:border-red-400 focus:border-b-1 transition duration-200 ease-in-out pt-4 pb-2"
               type="text"
               id="name"
               name="name"
@@ -120,35 +121,35 @@
               required
             />
 
-            <label for="email" class="pt-12 font-bold">Email</label>
+            <label for="email"
+            class="pt-12 font-bold">Email</label>
             <input
               class="input-field w-full max-w-[500px] bg-transparent border-b-1 border-gray-300 focus:outline-none focus:border-red-400 focus:border-b-1 transition duration-200 ease-in-out pt-4 pb-2"
               type="email"
               name="email"
               id="email"
               placeholder="Enter your email address"
+
               required
             />
 
             <label for="message" class="pt-12 font-bold">Message</label>
             <textarea
-              class="block w-full max-w-[900px] bg-transparent border-b-2 border-gray-300 focus:outline-none focus:border-b-red-400 transition duration-300 ease-in-out pt-4 pb-2 resize-none overflow-hidden"
-              name="message"
-              id="message"
-              rows="3"
-              cols="100"
-              placeholder="Hi, I think I could use your help with my product. How soon can we discuss this?"
-              required
-              oninput="this.style.height = 'auto'; this.style.height = (this.scrollHeight) + 'px';"
+                class="block w-full  max-w-[900px] bg-transparent border-b-2 border-gray-300 focus:outline-none focus:border-b-red-400 transition duration-300 ease-in-out pt-4 pb-2 resize-none overflow-hidden"
+                name="message"
+                id="message"
+                rows="3"
+                cols="100"
+                placeholder="Hi, I think I could use your help with my product. How soon can we discuss this?"
+                required
+                oninput="this.style.height = 'auto'; this.style.height = (this.scrollHeight) + 'px';"
             ></textarea>
 
-            <button
-              type="submit"
-              class="bg-white text-black font-bold py-2 px-4 rounded-lg hover:bg-red-400 transition duration-450 ease-in-out inline-block w-[200px] mt-9"
-            >
-              Send message
+            <button type="submit" class="	bg-white text-black font-bold py-2 px-4 rounded-lg hover:bg-red-400 transition duration-450 ease-in-out inline-block w-[200px] mt-9">
+                Send message
             </button>
-          </form>
+            
+            </form>
         </div>
       </div>
     </div>

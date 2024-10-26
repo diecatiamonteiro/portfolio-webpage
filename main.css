@@ -45,8 +45,8 @@ header {
 
 .static-content .name {
   text-decoration: none;
-  font-weight: bold;
   color: #f87171;
+  font-weight: bold;
 }
 
 .static-content .menu {
@@ -159,78 +159,9 @@ header {
   transition: all 0.2s linear;
 }
 
-/* ---------- RESPONSIVE DESIGN || MOBILE ---------- */
+/* ---------- RESPONSIVE DESIGN ---------- */
 
 @media screen and (max-width: 576px) {
-  body {
-    padding: 0 20px 20px 20px;
-    overflow-y: hidden;
-  }
-
-  .my-container {
-    display: block;
-    overflow: hidden;
-    /* background-color: lightblue; */
-  }
-
-  .static-content {
-    position: fixed;
-    padding: 0;
-    height: 35%;
-    width: calc(100%);
-    background-color: #131313;
-  }
-
-  .my-container .scrollable-content {
-    padding: 280px 0 0 0;
-    overflow-y: visible;
-    width: 100%;
-  }
-
-  .my-container .static-content nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-    position: fixed;
-    top: 17%;
-    width: calc(100% - 40px);
-  }
-
-  .my-container .static-content nav .menu-link {
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: black;
-  }
-
-  .my-container .static-content .menu a {
-    font-size: 1.2rem;
-  }
-
-  .my-container .static-content header .menu .icons {
-    margin-top: 0;
-  }
-
-  .my-container .static-content header {
-    gap: 0;
-    padding-top: 20px;
-  }
-
-  .my-container .static-content header a {
-    font-size: 2.5rem;
-  }
-
-  .my-container .static-content header .role {
-    font-size: 1.4rem;
-    line-height: 30px;
-  }
-
-  .my-container .static-content header .role-descr {
-    font-size: 0.95rem;
-    line-height: 18px;
-  }
-
   .webdev,
   .yoga,
   .bachelor,
@@ -242,67 +173,19 @@ header {
     flex-direction: column;
   }
 
-  .my-container .scrollable-content .page-title {
-    font-size: 2.5rem;
+  .about-me {
+    align-items: flex-start;
   }
 
-  .my-container .scrollable-content .about-me {
-    flex-direction: column;
-  }
-
-  .my-container .scrollable-content .about-me img {
+  .about-me img {
     align-self: flex-start;
-    height: 350px;
-  }
-
-  .my-container .scrollable-content .sub-title {
-    font-size: 1.5rem;
-    padding-top: 50px;
-    padding-bottom: 40px;
-  }
-
-  .my-container .scrollable-content .senior {
-    padding-bottom: 10px;
-  }
-  .my-container .scrollable-content .senior,
-  .my-container .scrollable-content .junior {
-    font-size: 1.5rem;
-    line-height: 24px;
-  }
-
-  .my-container .scrollable-content .interests p {
-    font-size: 1rem;
-  }
-
-  .my-container .scrollable-content .interests .icon-list {
-    gap: 0.5rem;
-  }
-
-  .my-container .scrollable-content .interests .icon-list .material-icons {
-    font-size: 1.7rem;
-  }
-
-  .my-container .scrollable-content .interests .icon-list .last-icon {
-    padding-bottom: 50px;
-  }
-
-  .my-footer {
-    padding: 5px 0;
-    margin: 0;
-    text-align: right;
-    font-size: 0.7rem;
-    position: fixed;
-    bottom: 0;
-    right: 20px;
-    left: 0;
-    background-color: #131313;
   }
 }
 
-/* @media screen and (min-width: 800px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   body {
     height: fit-content;
-    padding: 30px;
+    padding: 40px;
   }
 
   .my-container {
@@ -345,8 +228,9 @@ header {
   }
 }
 
+
 @media screen and (min-width: 1175px) and (max-width: 1309px) {
   .text-about p {
     font-size: 14px;
   }
-} */
+}
